@@ -1,0 +1,1 @@
+extension StringLocalization on String {}
