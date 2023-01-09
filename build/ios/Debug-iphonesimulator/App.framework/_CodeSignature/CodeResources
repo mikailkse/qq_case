@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		DvM7S+QhhyCMobWtCMJAIJCicWo=
+		1GDXWpsF2TqKakUJ+QDiTJBqlpU=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		y3USAQxbNVjYqPzx8BfeRuNhawc=
+		WBOCgvE6HGrX/skQjqkT6hvjQOw=
 		</data>
 		<key>flutter_assets/assets/qq_logo.png</key>
 		<data>
@@ -34,11 +34,19 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		q0FLn1UwXlmJXW2wjKYH+qydIwU=
+		A/lf5wiBuoVWMblmU6/TaFmIb5s=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
 		P7bb/oR3EhwqCIH1M6LyTuBIWYU=
+		</data>
+		<key>flutter_assets/packages/kartal/assets/placeholder.json</key>
+		<data>
+		oOx8FDJUQSd2JYdTH065+SBcenI=
+		</data>
+		<key>flutter_assets/packages/kartal/assets/placeholder_false.json</key>
+		<data>
+		O989BOXIiHkHbvPNVprnP6vtX54=
 		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -55,7 +63,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qaKqcGL7We+zwvD+x0esgebtJM4mqtNIi5MKV2JOSQ8=
+			UzrThvzfUWZYUoCshVumyWclbXn8nxepeXXvn2iw0fo=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -69,7 +77,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zkSsiUq9e2lVSoCRdOB32gAoGWh91znKFuORAKDSCU8=
+			L8Fw4/m0TOBtd3WRojG0TDkVA5SXvMn8rUHBo/a5/G8=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/qq_logo.png</key>
@@ -97,7 +105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UdZiF4usEkc13CNEcyc6agacVOWSmKmA9GI94g4G1aI=
+			gKDA+kUIOLvIw7t8maq6GHG8SdlehwoFhh5fXGfv7BM=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -105,6 +113,20 @@
 			<key>hash2</key>
 			<data>
 			x6NX+tjyECiQtyzbbjyY8U2zoZ7GDbJtE+T+k/dzgI0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kartal/assets/placeholder.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DNvRCDf3AHsTYhAj64lRbUyVm6dKjS9+oySJBI2etUA=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/kartal/assets/placeholder_false.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			54Uh9jOKbC7tXbm8oOw0WY0teIHOnQNy8AR8ck25G44=
 			</data>
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>

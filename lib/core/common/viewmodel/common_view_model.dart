@@ -5,5 +5,6 @@ class BaseViewModel extends ChangeNotifier {
 
   changeIsLoading() {
     isLoading != isLoading;
+    notifyListeners();
   }
 }

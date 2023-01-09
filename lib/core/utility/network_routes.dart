@@ -3,17 +3,20 @@
 import '../constants/app/app_constants.dart';
 
 enum NetworkRoutes {
-  LOGIN,
-}
+  PHOTO_URL(AppContants.PHOTO_URL),
+  BASE_URL(AppContants.API_URL),
+  GET_MOVIE('/search/movie?'),
+  GET_MOVIE_DETAIL('/movie/');
 
-extension NetwrokRoutesString on NetworkRoutes {
-  String get rawValue {
-    switch (this) {
-      case NetworkRoutes.LOGIN:
-        return AppConstants.BASEURL;
+  final String route;
 
-      default:
-        throw Exception('Routes Not Found');
-    }
+  const NetworkRoutes(this.route);
+
+  String withBaseUrl() {
+    return BASE_URL.route + route;
+  }
+
+  String withMovieDetailPath(int number) {
+    return GET_MOVIE_DETAIL.route + number.toString();
   }
 }

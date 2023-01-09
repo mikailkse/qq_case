@@ -10,6 +10,7 @@ class SplashViewModel extends BaseViewModel {
       () => NavigationService.instance
           .navigateToPageClear(path: HomeView.routeName),
     );
+
     notifyListeners();
   }
 }
