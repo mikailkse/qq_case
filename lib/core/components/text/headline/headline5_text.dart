@@ -4,12 +4,19 @@ import 'package:flutter/material.dart';
 import '../../../theme/theme.dart';
 
 class Headline5Text extends AutoSizeText {
-  Headline5Text({Key? key, required String text, required Color color})
+  Headline5Text(
+      {Key? key,
+      required String text,
+      required Color color,
+      int? maxLines,
+      TextAlign? textAlign})
       : super(
           key: key,
           text,
           overflow: TextOverflow.ellipsis,
           textScaleFactor: 1,
+          maxLines: maxLines,
+          textAlign: textAlign,
           style: dark.textTheme.headline5!.copyWith(
             color: color,
             fontWeight: dark.textTheme.headline5!.fontWeight,

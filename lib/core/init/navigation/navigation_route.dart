@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:qq_case/view/home/view/home_view.dart';
 import 'package:qq_case/view/movie_detail/view/movie_detail.dart';
+import 'package:qq_case/view/search/view/search_view.dart';
 
 class NavigationRoute {
   static final NavigationRoute _instance = NavigationRoute._init();
@@ -12,8 +12,8 @@ class NavigationRoute {
 
   Route<dynamic> generateRoute(RouteSettings args) {
     switch (args.name) {
-      case HomeView.routeName:
-        return FadeTransitionPageRoute(const HomeView(), settings: args);
+      case SearchView.routeName:
+        return FadeTransitionPageRoute(const SearchView(), settings: args);
       case MovieDetail.routeName:
         return FadeTransitionPageRoute(const MovieDetail(), settings: args);
       default:

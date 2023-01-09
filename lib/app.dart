@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qq_case/core/theme/theme.dart';
-import 'package:qq_case/view/_bottom_navbar/view/bottom_navbar.dart';
+import 'package:qq_case/view/splash/view/splash_view.dart';
 
 import 'core/init/navigation/navigation_route.dart';
 import 'core/init/navigation/navigation_service.dart';
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: NavigationRoute.instance.generateRoute,
       navigatorKey: NavigationService.instance.navigatorKey,
       debugShowCheckedModeBanner: false,
-      home: const BottomNavbar(),
+      home: const SplashView(),
     );
   }
 }

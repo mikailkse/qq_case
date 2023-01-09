@@ -6,6 +6,7 @@ class CustomTextFormField extends TextFormField {
   CustomTextFormField({
     void Function(String)? onChanged,
     TextEditingController? controller,
+    Widget? suffixIcon,
     super.key,
   }) : super(
           style: TextStyle(
@@ -20,6 +21,7 @@ class CustomTextFormField extends TextFormField {
           keyboardType: TextInputType.text,
           textInputAction: TextInputAction.search,
           decoration: InputDecoration(
+            suffixIcon: suffixIcon,
             hintText: 'Search',
             fillColor: AppColors.grey,
             filled: true,
@@ -28,10 +30,6 @@ class CustomTextFormField extends TextFormField {
               fontFamily: 'regular',
               fontSize: 16,
               fontWeight: FontWeight.w400,
-            ),
-            prefixIcon: Icon(
-              Icons.search,
-              color: AppColors.whiteGrey,
             ),
             errorStyle: TextStyle(
               color: AppColors.orange,
