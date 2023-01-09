@@ -21,12 +21,13 @@ class SearchInfoCard extends StatelessWidget {
           color: AppColors.white,
         ),
         Headline2Text(
-          text: 'Coin not found',
+          text: 'Search Movies',
           color: AppColors.white,
         ),
         const SizedBox(height: 5),
         BodyMediumText(
-          text: 'Try searching the item with a different keyword.',
+          text:
+              'If you want to reach many movies, you can type in the search bar.',
           textAlign: TextAlign.center,
           color: AppColors.whiteGrey,
         ),

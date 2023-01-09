@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:qq_case/view/movie_detail/view/movie_detail.dart';
+import 'package:qq_case/view/movie_detail/view/movie_detail_view.dart';
 import 'package:qq_case/view/search/view/search_view.dart';
 
 class NavigationRoute {

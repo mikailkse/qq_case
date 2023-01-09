@@ -16,10 +16,10 @@ class QueryModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['api_key'] = this.apiKey;
-    data['query'] = this.query;
-    data['page'] = this.page;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['api_key'] = apiKey;
+    data['query'] = query;
+    data['page'] = page;
     return data;
   }
 }

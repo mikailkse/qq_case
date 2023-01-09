@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:qq_case/core/common/viewmodel/common_view_model.dart';
 import 'package:qq_case/view/search/service/search_service.dart';
 
@@ -52,7 +53,7 @@ class SearchViewModel extends BaseViewModel {
     changeIsPageLazyLoad();
     changeIsLoading();
     final response = await searchService!.fetchMovie(QueryModel(
-      apiKey: 'e55b37b0c66c63bca665a7728ca876ca',
+      apiKey: dotenv.env['API_KEY'],
       query: _query,
       page: _page + 1,
     ).toJson());
@@ -83,9 +84,7 @@ class SearchViewModel extends BaseViewModel {
   Future<void> fetchDatas() async {
     changeIsLoading();
     data = await searchService!.fetchMovie(
-      QueryModel(
-              apiKey: 'e55b37b0c66c63bca665a7728ca876ca', query: 'a', page: 1)
-          .toJson(),
+      QueryModel(apiKey: dotenv.env['API_KEY'], query: 'a', page: 1).toJson(),
     );
     movieResultsArray = data.results ?? [];
     changeIsLoading();

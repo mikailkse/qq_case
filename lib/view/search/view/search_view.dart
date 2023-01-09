@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 import 'package:provider/provider.dart';
-import 'package:qq_case/core/components/loading/loading.dart';
-import 'package:qq_case/core/constants/color/app_colors.dart';
-import 'package:qq_case/view/search/viewmodel/search_view_model.dart';
 
 import '../../../core/components/grid/custom_grid_view.dart';
 import '../../../core/components/info_card/search_info_card.dart';
+import '../../../core/components/loading/loading.dart';
 import '../../../core/components/textformfield/custom_text_form_field.dart';
-import '../search_movie_card.dart';
+import '../../../core/constants/color/app_colors.dart';
+import '../_widget/search_movie_card.dart';
+import '../viewmodel/search_view_model.dart';
 
 class SearchView extends StatefulWidget {
   static const routeName = 'searchView';
@@ -90,11 +90,20 @@ class _SearchMovieCardList extends StatelessWidget {
       builder: (context, viewModel, child) => Padding(
         padding: context.paddingLow,
         child: viewModel.isLoading == true
-            ? const Loading()
+            ? SizedBox(
+                height: context.height / 1.5,
+                child: const Loading(),
+              )
             : viewModel.isPageLazyLoad
-                ? const Loading()
+                ? SizedBox(
+                    height: context.height / 1.5,
+                    child: const Loading(),
+                  )
                 : viewModel.isEmptyQuery == true
-                    ? const SearchInfoCard()
+                    ? SizedBox(
+                        height: context.height / 1.5,
+                        child: const SearchInfoCard(),
+                      )
                     : CustomGridView(
                         itemCount: viewModel.movieResultsArray.length,
                         itemBuilder: (context, index) => SearchMovieCard(
