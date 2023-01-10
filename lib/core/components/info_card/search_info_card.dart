@@ -21,7 +21,7 @@ class SearchInfoCard extends StatelessWidget {
           color: AppColors.white,
         ),
         Headline2Text(
-          text: 'Search Movies',
+          text: 'Search For a Movies',
           color: AppColors.white,
         ),
         const SizedBox(height: 5),

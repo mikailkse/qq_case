@@ -90,7 +90,7 @@ class SearchViewModel extends BaseViewModel {
     changeIsLoading();
   }
 
-  void fetchAllSearchQuery(String text) {
+  fetchAllSearchQuery(String text) {
     _debouncer.run(() {
       if (text.isEmpty) {
         _page = 0;
@@ -109,7 +109,7 @@ class SearchViewModel extends BaseViewModel {
     notifyListeners();
   }
 
-  void changeIsEmptyQuery() {
+  changeIsEmptyQuery() {
     isEmptyQuery = !isEmptyQuery;
     notifyListeners();
   }

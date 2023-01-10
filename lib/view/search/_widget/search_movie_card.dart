@@ -2,12 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
-import 'package:qq_case/core/components/text/body/body_medium_text.dart';
 import 'package:qq_case/core/components/text/headline/headline5_text.dart';
 import 'package:qq_case/core/constants/app/app_constants.dart';
 import 'package:qq_case/core/constants/color/app_colors.dart';
 import 'package:qq_case/view/search/viewmodel/search_view_model.dart';
 
+import '../../../core/components/card/point_card.dart';
 import '../../../core/utility/network_routes.dart';
 import '../../movie_detail/view/movie_detail_view.dart';
 
@@ -75,24 +75,7 @@ class SearchMovieCard extends StatelessWidget {
               ),
             ),
           ),
-          Positioned(
-            right: 10,
-            top: 10,
-            child: Container(
-              width: 30,
-              height: 30,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: context.lowBorderRadius,
-              ),
-              child: Center(
-                child: BodyMediumText(
-                  text: movieResult.voteAverage.toString(),
-                  color: AppColors.dark,
-                ),
-              ),
-            ),
-          )
+          PointCard(text: viewModel.movieResultsArray[index].voteAverage)
         ],
       ),
     );
