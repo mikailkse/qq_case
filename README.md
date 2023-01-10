@@ -1,16 +1,48 @@
-# qq_case
+# Flutter - Mobile Case Q&Q CASE
 
-A new Flutter project.
+## İlk Çalıştırma
 
-## Getting Started
+-**Dev ortamı için**
 
-This project is a starting point for a Flutter application.
+    flutter run --target=lib/main_dev.dart --flavor=dev
 
-A few resources to get you started if this is your first Flutter project:
+-**Prod ortamı için**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    flutter run --target=lib/main_prod.dart --flavor=prod
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+kodlarını girerek ilk çalıştırmayı sağlayabilirsiniz.
+
+## Ekran Görüntüleri
+
+### Splash
+<img align="center" width="250" height="530" src="screenshots/splash.png">
+
+
+### Search
+<img align="left" width="250" height="530" src="screenshots/search.png">
+<img align="center" width="250" height="530" src="screenshots/search1.png">
+
+
+### Movie Detail
+<img align="center" width="250" height="530" src="screenshots/detail.png">
+
+
+## Neler Eklendi :question:
+
+- [x] Splash
+- [x] Search View
+- [x] Movie Detail View
+- [x] State Management (Provider)
+- [x] Flavor
+
+
+## Kullanılan Paketler
+
+ #### Utilty
+ -auto_size_text,kartal,flutter_dotenv
+
+ #### State Management
+ -provider
+ 
+#### Network
+ -dio

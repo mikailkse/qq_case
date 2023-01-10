@@ -92,7 +92,8 @@ class SearchViewModel extends BaseViewModel {
   Future<void> fetchDatas() async {
     changeIsLoading();
     data = await searchService!.fetchMovie(
-      QueryModel(apiKey: dotenv.env['API_KEY'], query: 'a', page: 1).toJson(),
+      QueryModel(apiKey: dotenv.env['API_KEY'], query: _query, page: 1)
+          .toJson(),
     );
     movieResultsArray = data.results ?? [];
     changeIsLoading();

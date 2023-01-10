@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 import 'package:provider/provider.dart';
+import 'package:qq_case/core/components/text/headline/headline6_text.dart';
 
 import '../../../core/components/grid/custom_grid_view.dart';
 import '../../../core/components/info_card/search_info_card.dart';
@@ -79,13 +80,19 @@ class _SearchTextFormField extends StatelessWidget {
                       color: AppColors.whiteGrey,
                     ),
             ),
-            IconButton(
-              onPressed: () => viewModel.filter(),
-              icon: Icon(
-                Icons.keyboard_arrow_down,
-                size: 30,
-                color: AppColors.white,
-              ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Headline6Text(text: 'Filter', color: AppColors.whiteGrey),
+                IconButton(
+                  onPressed: () => viewModel.filter(),
+                  icon: Icon(
+                    Icons.keyboard_arrow_down,
+                    size: 30,
+                    color: AppColors.white,
+                  ),
+                ),
+              ],
             ),
           ],
         );
