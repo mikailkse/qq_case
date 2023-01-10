@@ -59,22 +59,37 @@ class _SearchTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Consumer<SearchViewModel>(
-      builder: (context, viewModel, child) => CustomTextFormField(
-        controller: viewModel.searchController,
-        onChanged: (value) => viewModel.fetchAllSearchQuery(value),
-        suffixIcon: viewModel.isEmptyQuery == false
-            ? IconButton(
-                onPressed: () => viewModel.setEmptyQuery(),
-                icon: Icon(
-                  Icons.cancel,
-                  color: AppColors.white,
-                ),
-              )
-            : Icon(
-                Icons.search,
-                color: AppColors.whiteGrey,
+      builder: (context, viewModel, child) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            CustomTextFormField(
+              controller: viewModel.searchController,
+              onChanged: (value) => viewModel.fetchAllSearchQuery(value),
+              suffixIcon: viewModel.isEmptyQuery == false
+                  ? IconButton(
+                      onPressed: () => viewModel.setEmptyQuery(),
+                      icon: Icon(
+                        Icons.cancel,
+                        color: AppColors.white,
+                      ),
+                    )
+                  : Icon(
+                      Icons.search,
+                      color: AppColors.whiteGrey,
+                    ),
+            ),
+            IconButton(
+              onPressed: () => viewModel.filter(),
+              icon: Icon(
+                Icons.keyboard_arrow_down,
+                size: 30,
+                color: AppColors.white,
               ),
-      ),
+            ),
+          ],
+        );
+      },
     );
   }
 }

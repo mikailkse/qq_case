@@ -46,6 +46,14 @@ class SearchViewModel extends BaseViewModel {
     notifyListeners();
   }
 
+  filter() {
+    movieResultsArray = movieResultsArray
+        .where((element) => (element.voteAverage ?? 0) >= 3)
+        .toList()
+      ..sort((a, b) => (a.voteAverage!.compareTo(b.voteAverage ?? 0)));
+    notifyListeners();
+  }
+
   Future<void> fetchAllLazy(int index) async {
     if (isPageLazyLoad ||
         index != movieResultsArray.length - 1 ||
