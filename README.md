@@ -12,19 +12,24 @@
 
 kodlarını girerek ilk çalıştırmayı sağlayabilirsiniz.
 
+
+Ana proje klasörü '.env' dosyasını oluşturun ve API anahtarını ayarlayın
+
+ÖRNEK : API_KEY= 'xxxxxx'
+
 ## Ekran Görüntüleri
 
 ### Splash
-<img align="center" width="250" height="530" src="screenshots/splash.png">
+<img align="center" width="250" height="530" src="screenshot/splash.png">
 
 
 ### Search
-<img align="left" width="250" height="530" src="screenshots/search.png">
-<img align="center" width="250" height="530" src="screenshots/search1.png">
+<img align="left" width="250" height="530" src="screenshot/search.png">
+<img align="center" width="250" height="530" src="screenshot/search1.png">
 
 
 ### Movie Detail
-<img align="center" width="250" height="530" src="screenshots/detail.png">
+<img align="center" width="250" height="530" src="screenshot/detail.png">
 
 
 ## Neler Eklendi :question:
